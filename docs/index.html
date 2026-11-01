@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<title>우리 모임 설문</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="config.js"></script>
+</head>
+<body>
+<div class="app" id="app">
+  <header class="topbar">
+    <div class="brand"><span class="dot"></span><span id="brandTitle">우리 모임 설문</span></div>
+    <nav class="nav" id="nav">
+      <a href="#survey" data-route="survey">설문</a>
+      <a href="#results" data-route="results" id="navResults">결과</a>
+    </nav>
+  </header>
+  <main id="main"></main>
+  <footer class="foot">
+    <a href="#admin" class="muted tiny">운영자</a>
+    <span class="tiny muted" id="mockBadge" hidden>미리보기 모드 · 데이터는 이 브라우저에만 저장됩니다 · <a href="#" id="mockReset">초기화</a></span>
+  </footer>
+</div>
+<div class="toast" id="toast"></div>
+<div class="overlay" id="overlay" hidden><div class="overlay-box"><div class="spinner"></div><div id="overlayText">저장 중…</div></div></div>
+<script src="app.js"></script>
+</body>
+</html>
